@@ -5,7 +5,8 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O2")
 
 add_library(exl 
     ./algorithms/search.cpp
-    ./algorithms/sort.cpp)
+    ./algorithms/sort.cpp
+    ./maths/general.cpp)
 
 project(tests)
 
