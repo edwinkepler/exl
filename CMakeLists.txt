@@ -4,7 +4,8 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS_RELEASE "-O2")
 
 add_library(exl 
-    ./algorithms/search.cpp)
+    ./algorithms/search.cpp
+    ./algorithms/sort.cpp)
 
 project(tests)
 
