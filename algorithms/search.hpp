@@ -1,5 +1,5 @@
 /**
- * exl::binary_search
+ * Search algorithms
  * Copyright (c) Edwin Kepler, All rights reserved.
  * 
  * This library is free software; you can redistribute it and/or modify it under
@@ -16,11 +16,25 @@
  * along with this library.
  */
 
-#ifndef BINARY_SEARCH_HPP
-#define BINARY_SEARCH_HPP
+#ifndef SEARCH_HPP
+#define SEARCH_HPP
 
-namespace exl {
+#include <vector>
 
+/**
+ * @brief Namespace containing all Extended Libraries.
+ */
+namespace exl
+{
+    /**
+     * @brief Binary search algorithm. O(log n) efficiency.
+     * @param Vector to look into.
+     * @param Element to search for.
+     * @return Position of a found element or 0 if there is no element in the
+     *         list.
+     */
+    template<typename T>
+    int binary_search(std::vector<T>&, T);
 }
 
-#endif // BINARY_SEARCH_HPP
+#endif // SEARCH_HPP
