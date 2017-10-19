@@ -1,7 +1,7 @@
 #ifndef MATHS_TESTS_HPP
 #define MATHS_TESTS_HPP
 
-#include "../maths/general.hpp"
+#include "../../maths/general.hpp"
 
 #define BOOST_TEST_MAIN
 
