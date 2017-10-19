@@ -35,6 +35,22 @@ namespace exl
      */
     template<typename T>
     int binary_search(std::vector<T>&, T);
+
+    /**
+     * @brief Find the smallest value in a vector. O(n) efficiency.
+     * @param Vector to look into.
+     * @return Smallest value.
+     */
+    template<typename T>
+    T find_smallest(std::vector<T>&);
+
+    /**
+     * @brief Find the biggest value in a vector. O(n) efficiency.
+     * @param Vector to look into.
+     * @return Biggest value.
+     */
+    template<typename T>
+    T find_largest(std::vector<T>&);
 }
 
 #endif // SEARCH_HPP

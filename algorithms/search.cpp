@@ -25,4 +25,36 @@ namespace exl
     template int binary_search(std::vector<double>& _list, double _item);
     template int binary_search(std::vector<float>& _list, float _item);
     template int binary_search(std::vector<long>& _list, long _item);
+
+    template<typename T>
+    T find_smallest(std::vector<T>& _item) {
+        T smallest = _item[0];
+        for(auto const& i : _item) {
+            if(i < smallest) {
+                smallest = i;
+            }
+        }
+        return smallest;
+    }
+
+    template int find_smallest(std::vector<int>& _item);
+    template double find_smallest(std::vector<double>& _item);
+    template float find_smallest(std::vector<float>& _item);
+    template long find_smallest(std::vector<long>& _item);
+
+    template<typename T>
+    T find_largest(std::vector<T>& _item) {
+        T smallest = _item[0];
+        for(auto const& i : _item) {
+            if(i > smallest) {
+                smallest = i;
+            }
+        }
+        return smallest;
+    }
+
+    template int find_largest(std::vector<int>& _item);
+    template double find_largest(std::vector<double>& _item);
+    template float find_largest(std::vector<float>& _item);
+    template long find_largest(std::vector<long>& _item);
 }
