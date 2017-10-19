@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#include "../algorithms/search.hpp"
+#include "../../algorithms/search.hpp"
 
 #define BOOST_TEST_MAIN
 

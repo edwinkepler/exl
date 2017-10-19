@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#include "../algorithms/sort.hpp"
+#include "../../algorithms/sort.hpp"
 
 #define BOOST_TEST_MAIN
 
