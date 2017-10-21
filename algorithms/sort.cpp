@@ -30,4 +30,5 @@ namespace exl
     template std::vector<double> selection_sort(std::vector<double> _item);
     template std::vector<float> selection_sort(std::vector<float> _item);
     template std::vector<long> selection_sort(std::vector<long> _item);
+    template std::vector<long long> selection_sort(std::vector<long long> _item);
 }

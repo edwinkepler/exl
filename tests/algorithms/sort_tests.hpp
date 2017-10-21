@@ -45,4 +45,13 @@ BOOST_AUTO_TEST_CASE(selection_sort_long)
                                   v_test.begin(), v_test.end());
 }
 
+BOOST_AUTO_TEST_CASE(selection_sort_longlong)
+{
+    std::vector<long long> v_unsorted = {3, 1, 2, 7, 6};
+    std::vector<long long> v_sorted = {1, 2, 3, 6, 7};
+    auto v_test = exl::selection_sort(v_unsorted);
+    BOOST_CHECK_EQUAL_COLLECTIONS(v_sorted.begin(), v_sorted.end(), 
+                                  v_test.begin(), v_test.end());
+}
+
 #endif // SORT_TESTS_HPP

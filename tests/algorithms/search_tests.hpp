@@ -57,6 +57,18 @@ BOOST_AUTO_TEST_CASE(binary_search_long_vector_elem_not_in_a_list)
     BOOST_REQUIRE_EQUAL(0, exl::binary_search(v_test, (long)4));
 }
 
+BOOST_AUTO_TEST_CASE(binary_search_longlong_vector)
+{
+    std::vector<long long> v_test = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    BOOST_REQUIRE_EQUAL(4, exl::binary_search(v_test, (long long)4));
+}
+
+BOOST_AUTO_TEST_CASE(binary_search_longlong_vector_elem_not_in_a_list)
+{
+    std::vector<long long> v_test = {1, 2, 3, 5, 6, 7, 8, 9, 10};
+    BOOST_REQUIRE_EQUAL(0, exl::binary_search(v_test, (long long)4));
+}
+
 BOOST_AUTO_TEST_CASE(find_smallest_int_vector)
 {
     std::vector<int> v_test = {1, 2, 3, 5, 6, 7, 8, 9, 10};
@@ -105,6 +117,18 @@ BOOST_AUTO_TEST_CASE(find_smallest_long_vector_2)
     BOOST_REQUIRE_EQUAL(2, exl::find_smallest(v_test));
 }
 
+BOOST_AUTO_TEST_CASE(find_smallest_longlong_vector)
+{
+    std::vector<long long> v_test = {1, 2, 3, 5, 6, 7, 8, 9, 10};
+    BOOST_REQUIRE_EQUAL(1, exl::find_smallest(v_test));
+}
+
+BOOST_AUTO_TEST_CASE(find_smallest_longlong_vector_2)
+{
+    std::vector<long long> v_test = {5, 6, 7, 9, 10, 2};
+    BOOST_REQUIRE_EQUAL(2, exl::find_smallest(v_test));
+}
+
 BOOST_AUTO_TEST_CASE(find_largest_int_vector)
 {
     std::vector<int> v_test = {1, 2, 3, 5, 6, 7, 8, 9, 10};
@@ -150,6 +174,18 @@ BOOST_AUTO_TEST_CASE(find_largest_long_vector)
 BOOST_AUTO_TEST_CASE(find_largest_long_vector_2)
 {
     std::vector<long> v_test = {5, 6, 7, 9, 10, 2};
+    BOOST_REQUIRE_EQUAL(10, exl::find_largest(v_test));
+}
+
+BOOST_AUTO_TEST_CASE(find_largest_longlong_vector)
+{
+    std::vector<long long> v_test = {1, 2, 3, 5, 6, 7, 8, 9, 10};
+    BOOST_REQUIRE_EQUAL(10, exl::find_largest(v_test));
+}
+
+BOOST_AUTO_TEST_CASE(find_largest_longlong_vector_2)
+{
+    std::vector<long long> v_test = {5, 6, 7, 9, 10, 2};
     BOOST_REQUIRE_EQUAL(10, exl::find_largest(v_test));
 }
 
