@@ -4,7 +4,7 @@
 namespace exl
 {
     template<typename T>
-    std::vector<T> selection_sort(std::vector<T> _item) {
+    std::vector<T> selection_sort(std::vector<T>& _item) {
         std::vector<T> v_sorted;
         while(!_item.empty()) {
             T smallest = _item[0];
@@ -26,9 +26,9 @@ namespace exl
         return v_sorted;
     }
 
-    template std::vector<int> selection_sort(std::vector<int> _item);
-    template std::vector<double> selection_sort(std::vector<double> _item);
-    template std::vector<float> selection_sort(std::vector<float> _item);
-    template std::vector<long> selection_sort(std::vector<long> _item);
-    template std::vector<long long> selection_sort(std::vector<long long> _item);
+    template std::vector<int> selection_sort(std::vector<int>& _item);
+    template std::vector<double> selection_sort(std::vector<double>& _item);
+    template std::vector<float> selection_sort(std::vector<float>& _item);
+    template std::vector<long> selection_sort(std::vector<long>& _item);
+    template std::vector<long long> selection_sort(std::vector<long long>& _item);
 }

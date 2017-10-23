@@ -29,7 +29,7 @@ namespace exl
      * @return Sorted vector.
      */
     template<typename T>
-    std::vector<T> selection_sort(std::vector<T>);
+    std::vector<T> selection_sort(std::vector<T>&);
 }
 
 #endif // SORT_HPP
