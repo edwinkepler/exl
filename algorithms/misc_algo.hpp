@@ -5,6 +5,11 @@
 
 namespace exl
 {
+    /**
+     * @brief Sum all elements of std::vector.
+     * @param Vector to sum.
+     * @return Summed value.
+     */
     template<typename T>
     T sum(std::vector<T>&);
 }
