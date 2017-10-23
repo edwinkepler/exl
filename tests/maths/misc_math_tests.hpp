@@ -1,7 +1,7 @@
-#ifndef MATHS_TESTS_HPP
-#define MATHS_TESTS_HPP
+#ifndef MISC_MATH_TESTS_HPP
+#define MISC_MATH_TESTS_HPP
 
-#include "../../maths/general.hpp"
+#include "../../maths/misc_math.hpp"
 
 #define BOOST_TEST_MAIN
 
@@ -27,4 +27,4 @@ BOOST_AUTO_TEST_CASE(factorial_15)
     BOOST_REQUIRE_EQUAL(1307674368000, exl::factorial(15));
 }
 
-#endif // MATHS_TESTS_HPP
+#endif // MISC_MATH_TESTS_HPP
