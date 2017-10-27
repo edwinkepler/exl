@@ -7,6 +7,7 @@ add_library(exl
     ./algorithms/misc_algo.cpp
     ./algorithms/search.cpp
     ./algorithms/sort.cpp
+    ./maths/conversion.cpp
     ./maths/misc_math.cpp)
 
 project(tests)

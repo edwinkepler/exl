@@ -18,6 +18,7 @@
 #ifndef MATHS_HPP
 #define MATHS_HPP
 
+#include "conversion.hpp"
 #include "misc_math.hpp"
 
 #endif // MATHS_HPP
