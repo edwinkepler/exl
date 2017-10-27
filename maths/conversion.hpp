@@ -19,12 +19,18 @@
 #ifndef CONVERSION_HPP
 #define CONVERSION_HPP
 
+#include <tuple>
+#include <cmath>
+
 namespace exl
 {
     const double KM_MI = 0.62137;
     const double KM_YD = 1093.6;
     const double KM_FT = 3280.8;
     const double KM_IN = 39370;
+    const double MI_M  = 0.00062137;
+    const double MI_CM = 0.0000062137;
+    const double MI_YD = 1760.0;
 
     /**
      * @brief Kilometers to miles conversion.
@@ -57,6 +63,46 @@ namespace exl
      */
     template<typename T>
     double km_to_in(T);
+
+    /**
+     * @brief Kilometers to miles and yards conversion.
+     * @param Value to convert in kilometers.
+     * @return Tuple of converted miles and yards.
+     */
+    template<typename T>
+    std::tuple<int, int> km_to_mi_yd(T);
+
+    /**
+     * @brief Miles to kilometers conversion.
+     * @param Value to convert.
+     * @return Converted value.
+     */
+    template<typename T>
+    double mi_to_km(T);
+
+    /**
+     * @brief Miles to meters conversion.
+     * @param Value to convert.
+     * @return Converted value.
+     */
+    template<typename T>
+    double mi_to_m(T);
+
+    /**
+     * @brief Miles to centimeters conversion.
+     * @param Value to convert.
+     * @return Converted value.
+     */
+    template<typename T>
+    double mi_to_cm(T);
+
+    /**
+     * @brief Miles to yards conversion.
+     * @param Value to convert.
+     * @return Converted value.
+     */
+    template<typename T>
+    double mi_to_yd(T);
 }
 
 #endif // CONVERSION_HPP
