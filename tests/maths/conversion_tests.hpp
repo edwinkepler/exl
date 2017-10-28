@@ -97,4 +97,24 @@ BOOST_AUTO_TEST_CASE(mi_to_yd)
     BOOST_REQUIRE_EQUAL(88000, std::floor(exl::mi_to_yd(50.0)));
 }
 
+BOOST_AUTO_TEST_CASE(c_to_f)
+{
+    BOOST_REQUIRE_EQUAL(212, std::floor(exl::c_to_f(100)));
+}
+
+BOOST_AUTO_TEST_CASE(c_to_f_2)
+{
+    BOOST_REQUIRE_EQUAL(122, std::floor(exl::c_to_f(50)));
+}
+
+BOOST_AUTO_TEST_CASE(f_to_c)
+{
+    BOOST_REQUIRE_EQUAL(100, std::floor(exl::f_to_c(212)));
+}
+
+BOOST_AUTO_TEST_CASE(f_to_c_2)
+{
+    BOOST_REQUIRE_EQUAL(50, std::floor(exl::f_to_c(122)));
+}
+
 #endif // CONVERSION_TESTS_HPP

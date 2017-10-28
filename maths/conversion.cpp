@@ -102,4 +102,26 @@ namespace exl
     template double mi_to_yd(double _mi);
     template double mi_to_yd(long _mi);
     template double mi_to_yd(long long _mi);
+
+    template<typename T>
+    double c_to_f(T _c) {
+        return _c * C_F + C_F_ADD;
+    }
+
+    template double c_to_f(int _c);
+    template double c_to_f(float _c);
+    template double c_to_f(double _c);
+    template double c_to_f(long _c);
+    template double c_to_f(long long _c);
+
+    template<typename T>
+    double f_to_c(T _f) {
+        return (_f - C_F_ADD) / C_F;
+    }
+
+    template double f_to_c(int _f);
+    template double f_to_c(float _f);
+    template double f_to_c(double _f);
+    template double f_to_c(long _f);
+    template double f_to_c(long long _f);
 }

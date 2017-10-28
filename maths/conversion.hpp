@@ -24,13 +24,15 @@
 
 namespace exl
 {
-    const double KM_MI = 0.62137;
-    const double KM_YD = 1093.6;
-    const double KM_FT = 3280.8;
-    const double KM_IN = 39370;
-    const double MI_M  = 0.00062137;
-    const double MI_CM = 0.0000062137;
-    const double MI_YD = 1760.0;
+    const double KM_MI      = 0.62137;      // kilometers to miles
+    const double KM_YD      = 1093.6;       // kilimoters to yards
+    const double KM_FT      = 3280.8;       // kilometers to feets
+    const double KM_IN      = 39370;        // kilometers to inches
+    const double MI_M       = 0.00062137;   // miles to meters
+    const double MI_CM      = 0.0000062137; // miles to centimeters
+    const double MI_YD      = 1760.0;       // miles to yards
+    const double C_F        = 1.8000;       // celsius to fahrenheit
+    const int    C_F_ADD    = 32;           // additional for celsius to fahrenheit
 
     /**
      * @brief Kilometers to miles conversion.
@@ -103,6 +105,22 @@ namespace exl
      */
     template<typename T>
     double mi_to_yd(T);
+
+    /**
+     * @brief Celsius to fahrenheit conversion.
+     * @param Value to convert.
+     * @return Converted value.
+     */
+    template<typename T>
+    double c_to_f(T);
+
+    /**
+     * @brief Fahrenheit to celsius conversion.
+     * @param Value to convert.
+     * @return Converted value.
+     */
+    template<typename T>
+    double f_to_c(T);
 }
 
 #endif // CONVERSION_HPP
