@@ -13,6 +13,18 @@ Bunch of extended libraries for C++.
 
 ## Maths
 
+- Conversions
+  - Kilometers to miles
+  - Kilometers to yards
+  - Kilometers to feets
+  - Kilometers to inches
+  - Kilometers to miles and yards
+  - Miles to kilometers
+  - Miles to meters
+  - Miles to centimeters
+  - Miles to yards
+  - Celsius to fahrenheit
+  - Fahrenheit to celsius
 - General
   - Factorial
 
