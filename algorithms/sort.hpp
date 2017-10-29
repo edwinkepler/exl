@@ -37,7 +37,7 @@ namespace exl
      * @return Sorted vector.
      */
     template<typename T>
-    std::vector<T> quicksort(std::vector<T>&);
+    std::vector<T> quicksort(std::vector<T>& _item, int _pivot = 0);
 }
 
 #endif // SORT_HPP
