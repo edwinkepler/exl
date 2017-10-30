@@ -1,5 +1,5 @@
 /**
- * Search algorithms
+ * Sort algorithms
  * Copyright (c) Edwin Kepler, All rights reserved.
  * 
  * This library is free software; you can redistribute it and/or modify it under
@@ -23,12 +23,6 @@
 
 namespace exl
 {
-    template <typename T>
-    std::vector<T>& operator+=(std::vector<T>& a, const std::vector<T>& b);
-
-    template <typename T>
-    std::vector<T>& operator+=(std::vector<T>& aVector, const T& aObject);
-
     template<typename T>
     bool is_sorted_i(std::vector<T>&);
 
