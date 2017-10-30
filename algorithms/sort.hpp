@@ -23,6 +23,12 @@
 
 namespace exl
 {
+    template<typename T>
+    bool is_sorted_i(std::vector<T>&);
+
+    template<typename T>
+    bool is_sorted_d(std::vector<T>&);
+
     /**
      * @brief Selection sort algorithm. O(n2) efficiency.
      * @param Vector to sort.
