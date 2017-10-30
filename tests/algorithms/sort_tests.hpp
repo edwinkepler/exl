@@ -105,6 +105,15 @@ BOOST_AUTO_TEST_CASE(quicksort_int_3)
                                   v_test.begin(), v_test.end());
 }
 
+BOOST_AUTO_TEST_CASE(quicksort_int_4)
+{
+    std::vector<int> v_unsorted = {10, 5, 2 , 3};
+    std::vector<int> v_sorted = {2, 3, 5, 10};
+    auto v_test = exl::quicksort(v_unsorted);
+    BOOST_CHECK_EQUAL_COLLECTIONS(v_sorted.begin(), v_sorted.end(), 
+                                  v_test.begin(), v_test.end());
+}
+
 BOOST_AUTO_TEST_CASE(quicksort_double)
 {
     std::vector<double> v_unsorted = {3.0, 1.0, 2.0, 7.0, 6.0};
