@@ -1,6 +1,6 @@
 #include "sort.hpp"
 #include <algorithm>
-
+#include <iostream>
 namespace exl
 {
     template<typename T>
@@ -67,17 +67,4 @@ namespace exl
     template std::vector<float> selection_sort(std::vector<float> _item);
     template std::vector<long> selection_sort(std::vector<long> _item);
     template std::vector<long long> selection_sort(std::vector<long long> _item);
-
-    template<typename T>
-    std::vector<T> quicksort(std::vector<T> _item) {
-        // https://stackoverflow.com/a/13735472/7018612
-        std::sort(_item.begin(), _item.end());
-        return _item;
-    }
-
-    template std::vector<int> quicksort(std::vector<int> _item);
-    template std::vector<double> quicksort(std::vector<double> _item);
-    template std::vector<float> quicksort(std::vector<float> _item);
-    template std::vector<long> quicksort(std::vector<long> _item);
-    template std::vector<long long> quicksort(std::vector<long long> _item);
 }

@@ -46,14 +46,6 @@ namespace exl
      */
     template<typename T>
     std::vector<T> selection_sort(std::vector<T>);
-
-    /**
-     * @brief Quicksort algorithm. O(n log n) efficiency.
-     * @param Vector to sort.
-     * @return Sorted vector.
-     */
-    template<typename T>
-    std::vector<T> quicksort(std::vector<T> _item);
 }
 
 #endif // SORT_HPP
