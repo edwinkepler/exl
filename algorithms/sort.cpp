@@ -70,25 +70,9 @@ namespace exl
 
     template<typename T>
     std::vector<T> quicksort(std::vector<T> _item) {
-        // if(_item.size() < 2) {
-        //     return _item;
-        // } else {
-        //     int partition = std::floor(_item.size() / 2);
-        //     T pivot = _item[partition];
-        //     std::vector<T> less;
-        //     std::vector<T> greater;
-        //     for(int i = 0; i < partition; i++) {
-        //         if(i <= pivot) {
-        //             less.push_back(i);
-        //         }
-        //     }
-        //     for(int i = _item.size() - 1; i > partition; i--) {
-        //         if(i > pivot) {
-        //             greater.push_back(i);
-        //         }
-        //     }
-        //     return quicksort(less) + quicksort(greater);
-        // }
+        // https://stackoverflow.com/a/13735472/7018612
+        std::sort(_item.begin(), _item.end());
+        return _item;
     }
 
     template std::vector<int> quicksort(std::vector<int> _item);
