@@ -23,9 +23,19 @@
 
 namespace exl
 {
+    /**
+     * @brief Function checks if vector is sorted increasingly.
+     * @param Vector to check.
+     * @return True if vector is sorted increasingly, false otherwise.
+     */
     template<typename T>
     bool is_sorted_i(std::vector<T>&);
 
+    /**
+     * @brief Function checks if vector is sorted decreasingly.
+     * @param Vector to check.
+     * @return True if vector is sorted decreasingly, false otherwise.
+     */
     template<typename T>
     bool is_sorted_d(std::vector<T>&);
 
