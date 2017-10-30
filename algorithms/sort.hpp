@@ -23,6 +23,12 @@
 
 namespace exl
 {
+    template <typename T>
+    std::vector<T>& operator+=(std::vector<T>& a, const std::vector<T>& b);
+
+    template <typename T>
+    std::vector<T>& operator+=(std::vector<T>& aVector, const T& aObject);
+
     template<typename T>
     bool is_sorted_i(std::vector<T>&);
 
@@ -43,7 +49,7 @@ namespace exl
      * @return Sorted vector.
      */
     template<typename T>
-    std::vector<T> quicksort(std::vector<T>& _item, int _pivot = 0);
+    std::vector<T> quicksort(std::vector<T> _item);
 }
 
 #endif // SORT_HPP

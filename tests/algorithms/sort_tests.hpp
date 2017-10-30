@@ -78,14 +78,14 @@ BOOST_AUTO_TEST_CASE(selection_sort_longlong)
                                   v_test.begin(), v_test.end());
 }
 
-BOOST_AUTO_TEST_CASE(quicksort_int)
-{
-    std::vector<int> v_unsorted = {3, 1, 2, 7, 6};
-    std::vector<int> v_sorted = {1, 2, 3, 6, 7};
-    auto v_test = exl::quicksort(v_unsorted);
-    BOOST_CHECK_EQUAL_COLLECTIONS(v_sorted.begin(), v_sorted.end(), 
-                                  v_test.begin(), v_test.end());
-}
+// BOOST_AUTO_TEST_CASE(quicksort_int)
+// {
+//     std::vector<int> v_unsorted = {3, 1, 2, 7, 6};
+//     std::vector<int> v_sorted = {1, 2, 3, 6, 7};
+//     auto v_test = exl::quicksort(v_unsorted);
+//     BOOST_CHECK_EQUAL_COLLECTIONS(v_sorted.begin(), v_sorted.end(), 
+//                                   v_test.begin(), v_test.end());
+// }
 
 // BOOST_AUTO_TEST_CASE(quicksort_int_2)
 // {

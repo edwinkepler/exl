@@ -69,38 +69,31 @@ namespace exl
     template std::vector<long long> selection_sort(std::vector<long long>& _item);
 
     template<typename T>
-    std::vector<T> quicksort(std::vector<T>& _item, int _pivot) {
-        if(_item.size() < 2) {
-            return _item;
-        } else {
-            std::vector<T> v_sorted;
-            T pivot = _item[_pivot];
-            std::vector<T> less;
-            std::vector<T> greater;
-            for(const auto& i : _item) {
-                if(i <= pivot) {
-                    less.push_back(i);
-                }
-            }
-            for(const auto& i : _item) {
-                if(i > pivot) {
-                    greater.push_back(i);
-                }
-            }
-            for(const auto& i : less) {
-                v_sorted.push_back(i);
-            }
-            v_sorted.push_back(pivot);
-            for(const auto& i : greater) {
-                v_sorted.push_back(i);
-            }
-            return quicksort(v_sorted);
-        }
+    std::vector<T> quicksort(std::vector<T> _item) {
+        // if(_item.size() < 2) {
+        //     return _item;
+        // } else {
+        //     int partition = std::floor(_item.size() / 2);
+        //     T pivot = _item[partition];
+        //     std::vector<T> less;
+        //     std::vector<T> greater;
+        //     for(int i = 0; i < partition; i++) {
+        //         if(i <= pivot) {
+        //             less.push_back(i);
+        //         }
+        //     }
+        //     for(int i = _item.size() - 1; i > partition; i--) {
+        //         if(i > pivot) {
+        //             greater.push_back(i);
+        //         }
+        //     }
+        //     return quicksort(less) + quicksort(greater);
+        // }
     }
 
-    template std::vector<int> quicksort(std::vector<int>& _item, int _pivot);
-    template std::vector<double> quicksort(std::vector<double>& _item, int _pivot);
-    template std::vector<float> quicksort(std::vector<float>& _item, int _pivot);
-    template std::vector<long> quicksort(std::vector<long>& _item, int _pivot);
-    template std::vector<long long> quicksort(std::vector<long long>& _item, int _pivot);
+    template std::vector<int> quicksort(std::vector<int> _item);
+    template std::vector<double> quicksort(std::vector<double> _item);
+    template std::vector<float> quicksort(std::vector<float> _item);
+    template std::vector<long> quicksort(std::vector<long> _item);
+    template std::vector<long long> quicksort(std::vector<long long> _item);
 }
